@@ -1,0 +1,18 @@
+.searchbar {
+    background-color: bisque;
+    height: 150px;
+}
+.searchresults {
+    background-color: rgb(126, 86, 120);
+}
+#bkrnd-img {
+    position: absolute;
+    opacity: .8;
+    width: 100rem;
+}
+#hide {
+    display: none;
+}
+#test {
+    position: relative;
+}
