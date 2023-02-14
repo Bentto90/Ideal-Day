@@ -1,7 +1,10 @@
-var tripadvisorApi = "E8D9341F383847AAB98EE89426A15F8C"
+var rapidapikey = "c847c94837msh769cdaeccd7bcbdp1df16ajsn03d64a2f2860"
 var weatherApi = "a7cf6d8b7818bef7a79d89c363469555"
-var weatherIcon = document.querySelector("img")
-var hideImg = document.getElementsByClassName("hide")
+var weatherIcon = document.querySelector("img");
+var hideImg = document.getElementsByClassName("hide");
+var resultEl = docment.querySelector('#result');
+var resultCo = document.querySelector('#result-contents');
+var searchFormEl = document.querySelector('#search=form');
 
 function searchCity(cityName) {
   var cityName = document.getElementById("city-input").value
@@ -22,10 +25,8 @@ function searchCity(cityName) {
           }
           
         })
-       
-
-
 }
+
 
 
 
