@@ -23,7 +23,8 @@
 
         </div>
       </section>
-      <div id="hide"><img src="rain.jpg"></div>
+  
+
       <div class="columns">
         <div class="column is-one-fifth searchbar">
             <div class="control">
@@ -34,13 +35,18 @@
               </div>
         </div>
         <div class="column searchresults">
-          <h1>Results</h1>
-          <div id="icon"><img id="wicon" src=""></div>
+          <h1 id="city-name"></h1>
+          <h3 id="temp"></h3>
+          <p id="weather"></p>
         </div>
       </div>
+        <div>
+        <div class="hidden" id="rainy"></div>
+        <div class="hidden" id="clear"></div>
+        <div class="hidden" id="cloudy"></div>
+        <div class="hidden" id="snowy"></div>
 
-
-      <section>
+      
         <section>
             <div class="searchbar">
                   <b> Search: </b>
@@ -48,8 +54,6 @@
                   <button id="search-btn"> ENTER</button>
             </div>
             
-    
-          </section>
       </section>
       <section class="section is-large">
         
@@ -59,7 +63,7 @@
         <h2 class="subtitle">
           Things people want to save here.
         </h2> 
-      </section>
+      </div>
     </div>
 
     <!-- Jquery Code -->
@@ -117,6 +121,8 @@
         <div class="portlet-header">Activities</div>
         <div class="portlet-content"><textarea></textarea></div>
       </div>
+      </section>
+    
     
     
       <div class="portlet">
