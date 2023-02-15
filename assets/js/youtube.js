@@ -5,31 +5,35 @@ const options = {
 		'X-RapidAPI-Host': 'youtube-search-results.p.rapidapi.com'
 	}
 };
+// linking btns and keywords from HTML input to javascript function
+const searchKeyword = document.querySelector('#search-input');
+const searchBtn = document.querySelector('#search-btn');
 
-const userInput = document.querySelector('#search-input');
-const btn = document.querySelector('#search-btn');
 
-let params = ''
-const callParams = () => {
-    params = userInput.value
-    fetch(`https://youtube-search-results.p.rapidapi.com/youtube-search/?q="things to do in "${params}`, options)
+// creating functions to display youtube search result into the website.
+let keyword = ''
+function callkeyword () {
+    keyword = searchKeyword.value
+    fetch(`https://youtube-search-results.p.rapidapi.com/youtube-search/?q="things to do in "${keyword}`, options)
         .then(response => response.json())
         .then(data => {
             let output = '';
+            // selecting only title and url so get rid of unwanted information
             data.items.map(item => {
                 output += `
-                    <h1>${item.title}</h1>
-                    <li>
+                    <h4>${item.title}</h4>
+                    <ol>
                     <a href="${item.url}">${item.url}</a>
-                    </li>
+                    </ol>
                     `;
                   
             })
             document.querySelector('.results').innerHTML = output;
         })
         .catch(err => console.error(err));
-    userInput.value = '';
+
+    searchKeyword.value = '';
 }
 
 
-btn.addEventListener('click', callParams)
+searchBtn.addEventListener('click', callkeyword)
