@@ -4,10 +4,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css" />
     <title>Ideal Day</title>
-    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-    <link type="text/css" rel="stylesheet" href="/assets/css/style.css">
-    <link type="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   </head>
 
 
@@ -28,7 +27,7 @@
       <div class="columns">
         <div class="column is-one-fifth searchbar">
             <div class="control">
-                <input class="input" id="city-input"type="text" placeholder="City, Restaurants, Etc...">
+                <input class="input" id="city-input"type="text" placeholder="City, Etc...">
               </div>
               <div class="control">
                 <button class="button is-primary" id="btn">Submit</button>
@@ -48,13 +47,43 @@
 
       
         <section>
-            <div class="searchbar">
-                  <b> Search: </b>
-                  <input id="search-input" type="text" placeholder="Search">
-                  <button id="search-btn"> ENTER</button>
+            <div class="columns">
+              <div class="column is-one-fifth searchbar">
+                <div class="control">
+                  <input class="input" type="text" id="search" placeholder="Search City For Info">
+                </div>
+              <div class ="control">
+                <button class="button is-primary" id ="button" onclick="searchWebsite()", onclick="searchYoutube()">Submit</button>
+              </div>
+            </div>
+            
+            <div class="column searchresults2">
+              <div id="result"></div>
+            </div>
             </div>
             
       </section>
+
+      <section>
+        <div class="columns">
+          <div class="column is-one-fifth searchbar">
+            <div class="control">
+              <input class="input" type="text" id="search-input" placeholder="Search Youtube Instead!">
+            </div>
+            <div class="control">
+              <button class= "button is-primary" id="search-btn">Search</button>
+            </div>
+          </div>
+          <div class="column searchresults3">
+            <div class="results"></div>
+          </div>
+          
+        </div>
+      </section>
+
+      
+
+
       <section class="section is-large">
         
         
@@ -65,95 +94,9 @@
         </h2> 
       </div>
     </div>
-
-    <!-- Jquery Code -->
-    <div class="jbody">
-    <div class="box">
-      <h1>Morning</h1>
-      <h1>Afternoon</h1>
-      <h1 style="padding-right: 40px;">Night</h1>
-      <h1>Midnight</h1>
-    </div>
-    <div class="flexing">
-    <div class="column">
-     
-      <div class="portlet">
-        <div class="portlet-header">↓☆plans☆↓</div>
-        <div class="portlet-content"><textarea></textarea></div>
-      </div>
-     
-      <div class="portlet">
-        <div class="portlet-header">↓☆plans☆↓</div>
-        <div class="portlet-content"><textarea></textarea></div>
-      </div>
-     
-      <div class="portlet">
-        <div class="portlet-header">↓☆plans☆↓</div>
-        <div class="portlet-content"><textarea></textarea></div>
-      </div>
-    </div>
-     
-    <div class="column">
-     
-      <div class="portlet">
-        <div class="portlet-header">↓☆plans☆↓</div>
-        <div class="portlet-content"><textarea></textarea></div>
-      </div>
-     
-      <div class="portlet">
-        <div class="portlet-header">↓☆plans☆↓</div>
-        <div class="portlet-content"><textarea></textarea></div>
-      </div>
-     
-      <div class="portlet">
-        <div class="portlet-header">↓☆plans☆↓</div>
-        <div class="portlet-content"><textarea></textarea></div>
-      </div>
-    </div>
-     
-    <div class="column">
-     
-      <div class="portlet">
-        <div class="portlet-header">↓☆plans☆↓</div>
-        <div class="portlet-content"><textarea></textarea></div>
-      </div>
-     
-      <div class="portlet">
-        <div class="portlet-header">↓☆plans☆↓</div>
-        <div class="portlet-content"><textarea></textarea></div>
-      </div>
       </section>
     
     
-    
-      <div class="portlet">
-        <div class="portlet-header">↓☆plans☆↓</div>
-        <div class="portlet-content"><textarea></textarea></div>
-      </div>
-     
-    </div>
-    
-    
-    <div class="column">
-     
-      <div class="portlet">
-        <div class="portlet-header">↓☆plans☆↓</div>
-        <div class="portlet-content"><textarea></textarea></div>
-      </div>
-     
-      <div class="portlet">
-        <div class="portlet-header">↓☆plans☆↓</div>
-        <div class="portlet-content"><textarea></textarea></div>
-      </div>
-     
-      <div class="portlet">
-        <div class="portlet-header">↓☆plans☆↓</div>
-        <div class="portlet-content"><textarea></textarea></div>
-      </div>
-    </div>
-    </div>    
-
-    </div>
   
 
 
@@ -162,10 +105,13 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assets/js/youtube.js"></script>
     <script src="./assets/js/searchbar.js"></script>
     <script type="text/javascript" src="./assets/js/script.js"></script>
+    
 
 
   </body>

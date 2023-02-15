@@ -6,6 +6,12 @@
 .searchresults {
     background-color: rgb(126, 86, 120);
 }
+.searchresults2 {
+    background-color: rgb(221, 210, 219);
+}
+.searchresults3 {
+    background-color: rgb(181, 166, 177);
+}
 .bkrnd-img {
     position: absolute;
     opacity: .4;
@@ -29,80 +35,6 @@ h1,
     position: relative;
 }
 
-.jbody {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    min-width: 520px;
-    opacity: 1;
-  }
-  
-.flexing {
-  display: flex;
-  padding-right: 20%;
-  padding-left: 20%;
-}
-  
-.box {
-display: flex;
-justify-content: space-around;
-font-size: 50px;
-font-weight: bold;
-padding-right: 20%;
-padding-left: 19%;
-color: black;
-padding-top: 200px;
-
-}
-   
-textarea {
-  width: 100%;
-  height: 150px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid rgba(9, 122, 8, 0.56);
-  border-radius: 4px;
-  background-color: #48db61;
-  resize: none;
-  font-size: 200px;
-  }
-
-  .column {
-    width: 170px;
-    float: left;
-    padding-bottom: 100px;
-    z-index: 1;
-  }
-
-  .portlet {
-    margin: 0 1em 1em 0;
-    padding: 0.3em;
-  }
-
-  .portlet-header {
-    padding: 0.2em 0.3em;
-    margin-bottom: 0.5em;
-    position: relative;
-  }
-
-  .portlet-toggle {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    margin-top: -8px;
-  }
-
-  .portlet-content {
-    padding: 0.4em;
-    font-size: 20px;
-    font-weight: bolder;
-    color: black;
-  }
-
-  .portlet-placeholder {
-    border: 1px dotted black;
-    margin: 0 1em 1em 0;
-    height: 50px;
-  }
-  
 .hidden {
     display: none;
 }
